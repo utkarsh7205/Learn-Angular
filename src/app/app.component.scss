@@ -1,0 +1,26 @@
+.toolbar {
+       display: flex;
+       gap: 8px;
+       align-items: center;
+       flex-wrap: wrap;
+}
+
+ul {
+       margin-top: 10px;
+       list-style-type: none;
+}
+
+li {
+       line-height: 1.8;
+       text-decoration-style: none;
+
+}
+
+input[type="text"] {
+       padding: 6px 8px;
+}
+
+.span {
+       margin-left: 8px;
+       color: #666;
+}

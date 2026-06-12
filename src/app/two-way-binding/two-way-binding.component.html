@@ -1,0 +1,7 @@
+<p>two-way-binding works!</p>
+
+<!-- <input [(ngModel)]="user" type="text">
+<h1>{{user}}</h1> -->
+
+<input type="text" (input)="changeVal($event)" placeholder="enter-name">
+<h1>{{user}}</h1>
