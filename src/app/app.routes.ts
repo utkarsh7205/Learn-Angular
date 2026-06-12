@@ -4,8 +4,10 @@ import { SignalsComponent } from './signals/signals.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DynamicStylingComponent } from './dynamic-styling/dynamic-styling.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 export const routes: Routes = [
+
        {
               path: 'forloopcontxvar',
               component: ForLoopContxVarComponent
@@ -25,6 +27,15 @@ export const routes: Routes = [
        {
               path: 'dynamicStyling',
               component: DynamicStylingComponent
+       },
+       {
+              path: 'directives',
+              component: DirectivesComponent
+       },
+       {
+              path: '',
+              redirectTo: 'directives',
+              pathMatch: 'full'
        },
 ]
 

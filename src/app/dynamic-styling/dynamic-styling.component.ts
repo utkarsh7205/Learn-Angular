@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class DynamicStylingComponent {
 
-}
+  BgColor = "red";
+  fontSize = "30";
+  headingSizeBig = "80px"
+  headingSizeSmall = "30px"
+
+  zoom = true;
+  updateHeadingSize() {
+    this.zoom = !this.zoom;
+  }
+} 

@@ -1,0 +1,51 @@
+<p>directives works!</p>
+
+<h1 *ngIf="show">Hii</h1>
+
+<hr>
+<h1>
+       NG FOR
+</h1>
+<ul>
+       <li *ngFor="let i of arr">
+              {{i}}
+       </li>
+</ul>
+
+<ul>
+       <li *ngFor="let i of arr1">
+              <h1 *ngFor="let j of i"> {{j}}</h1>
+       </li>
+</ul>
+
+<hr>
+<h1>NG IF</h1>
+
+<!-- <div *ngIf="logIn; else elseBlock">
+       <a href="">logout</a>
+</div>
+<ng-template #elseBlock>
+       <a href="">login</a>
+</ng-template> -->
+
+
+<div *ngIf="block == 0">
+       <h1>Hii</h1>
+</div>
+<div *ngIf="block == 1">
+       <h1>Byy</h1>
+</div>
+<div *ngIf="block == 2">
+       <h1>Hello</h1>
+</div>
+<div *ngIf="block == 3; else elseBlock">
+       <h1>snDNc s</h1>
+</div>
+<ng-template #elseBlock>
+       <h1>Fuck Off</h1>
+</ng-template>
+
+<button (click)="updateBlock()">Click</button>
+
+<hr>
+

@@ -1,1 +1,6 @@
 <p>dynamic-styling works!</p>
+
+<h1 [style.backgroundColor]="BgColor" [style.fontSize.px]="fontSize">Hii</h1>
+
+<h1 [style.fontSize]="zoom ? headingSizeBig:headingSizeSmall">Lund</h1>
+<button (click)="updateHeadingSize()">Click</button>
