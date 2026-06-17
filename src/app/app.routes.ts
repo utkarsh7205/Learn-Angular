@@ -5,6 +5,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { ToDoListComponent } from './to-do-list/to-do-list.component';
 import { DynamicStylingComponent } from './dynamic-styling/dynamic-styling.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { ComponentWithoutCLI } from './ComponentWithoutCLI/ComponentWithoutCLI.component';
 
 export const routes: Routes = [
 
@@ -33,9 +34,13 @@ export const routes: Routes = [
               component: DirectivesComponent
        },
        {
-              path: '',
-              redirectTo: 'directives',
-              pathMatch: 'full'
+              path: 'componentWithoutCli',
+              component: ComponentWithoutCLI
        },
+       // {
+       //        path: '',
+       //        redirectTo: 'directives',
+       //        pathMatch: 'full'
+       // },
 ]
 

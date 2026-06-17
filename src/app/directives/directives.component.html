@@ -49,3 +49,16 @@
 
 <hr>
 
+<button (click)="updateColor('red')">Red</button>
+<button (click)="updateColor('green')">Green</button>
+<button (click)="updateColor('yellow')">Yellow</button>
+<button (click)="updateColor('Blue')">Blue</button>
+<button (click)="updateColor('black')">Ass</button>
+
+<div [ngSwitch]="color">
+       <h1 *ngSwitchCase="'red'" style="background-color: red;">Red Color</h1>
+       <h1 *ngSwitchCase="'green'" style="background-color: green;">Green Color</h1>
+       <h1 *ngSwitchCase="'yellow'" style="background-color: yellow;">Yellow Color</h1>
+       <h1 *ngSwitchCase="'Blue'" style="background-color: blue;">Blue Color</h1>
+       <h1 *ngSwitchDefault style="background-color: black; color: white;">Ass</h1>
+</div>

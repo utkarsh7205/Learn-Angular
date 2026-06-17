@@ -1,1 +1,5 @@
+@for (item of users(); track item) {
+<app-child-component [userName]="item"></app-child-component>
+}
+
 <router-outlet></router-outlet>

@@ -23,4 +23,10 @@ export class DirectivesComponent {
   updateBlock() {
     this.block = this.block + 1;
   }
+
+  color = "black";
+
+  updateColor(color: string) {
+    this.color = color;
+  }
 }
