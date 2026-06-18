@@ -1,4 +1,4 @@
-import { Component, Input, signal, StreamingResourceOptions } from '@angular/core';
+import { Component, EventEmitter, Input, Output, output, signal, StreamingResourceOptions } from '@angular/core';
 import { single } from 'rxjs';
 
 @Component({
@@ -9,4 +9,13 @@ import { single } from 'rxjs';
 })
 export class ChildComponentComponent {
   @Input() userName: string | undefined
+  @Output() Selectuser = new EventEmitter()
+  @Output() DeleteUser = new EventEmitter()
+
+  users(name: string | undefined) {
+    this.Selectuser.emit(name)
+  }
+  deleteUser(name: string | undefined) {
+    this.DeleteUser.emit(name)
+  }
 }

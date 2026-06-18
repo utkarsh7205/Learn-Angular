@@ -1,5 +1,13 @@
+<h3>Selected User: {{selectUserName()}}</h3>
+<br>
+<input type="text" (input)="update($event)" placeholder="Enter new user name">
+
+<button (click)="addNewUser()">Add new user</button>
+
 @for (item of users(); track item) {
-<app-child-component [userName]="item"></app-child-component>
+<app-child-component [userName]="item" (Selectuser)="Selectuser($event)" (DeleteUser)="DeleteUser($event)">
+
+</app-child-component>
 }
 
 <router-outlet></router-outlet>
